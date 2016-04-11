@@ -147,6 +147,10 @@ module Faker
       def device_token
         rand(16 ** 64).to_s(16).rjust(64, '0').chars.to_a.shuffle.join
       end
+
+      def mime_type
+        fetch('internet.mime_type')
+      end
     end
   end
 end

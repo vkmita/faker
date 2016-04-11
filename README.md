@@ -248,7 +248,7 @@ Faker::Internet.slug #=> "pariatur_laudantium"
 Faker::Internet.slug('foo bar') #=> "foo.bar"
 Faker::Internet.slug('foo bar', '-') #=> "foo-bar"
 
-
+Faker::Internet.mime_type #=> "image/png"
 ```
 
 ###Faker::Lorem

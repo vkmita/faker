@@ -171,4 +171,10 @@ class TestFakerInternet < Test::Unit::TestCase
   def test_device_token
     assert_equal 64, @tester.device_token.size
   end
+
+  def test_mime_type
+    100.times do
+      assert @tester.mime_type.match(/^(application|audio|chemical|image|message|model|text|video)\/\S+/)
+    end
+  end
 end
